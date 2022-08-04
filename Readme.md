@@ -32,7 +32,7 @@ We have provided a Github repo containing:
 There are a sequence of steps that we would like you to complete. We hope this won't take more than a couple of hours of your time.
 
 1. Fork the git repo to your own Github account.
-2. Devise a database schema to hold the data in the people and places CSV files, and apply it to the MySQL database. You may apply this schema via a script, via the MySQL command-line client, or via a GUI client.
+2. Prepare a database schema to hold the data in the people and places CSV files, and apply it to the MySQL database. You may apply this schema via a script, via the MySQL command-line client, or via a GUI client.
 3. Create a Docker image for loading the CSV files, places.csv and people.csv, into the tables you have created in the database. Make sure the appropriate config is in the docker compose file. Your data ingest process can be implemented in any way that you like, as long as it runs within a Docker container. You may implement this via program code in a language of your choice, or via the use of ETL tools.
 4. Create a Docker image for outputting a summary of content in the database. You may implement this using a programming language of your choice. The output must be in JSON format, and be written to a file in the data folder called **data/summary_output.json**. It should consist of a list of the countries, and a count of how many people were born in that country. We have supplied a sample output **data/sample_output.json** to compare your file against.
 5. Share a link to your cloned github repo with us so we can review your code ahead of your interview.
@@ -55,7 +55,7 @@ Details of how to run and connect to the database are below, together with how t
 
 ## Pairing activity at your interview
 
-We will spend 90 minutes at your interview pairing with you. This will include:
+We will spend 60 minutes at your interview pairing with you. This will include:
 
 - Looking at your current code and solution.
 - Modifying your output code, to add several new output files containing different subsets of the data. Be prepared to make different queries of the database, to manipulate data in your program code, and to output data to disk as JSON and CSV files.
